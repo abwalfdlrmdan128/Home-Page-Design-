@@ -1,7 +1,7 @@
 // Select all activity cards
 const cards = document.querySelectorAll(".Protfolio .card");
 
-// Loop through cards
+
 cards.forEach((card) => {
     card.addEventListener("click", () => {
         const title = card.querySelector("h3").innerText;
@@ -13,7 +13,8 @@ cards.forEach((card) => {
         localStorage.setItem("activityDesc", desc);
         localStorage.setItem("activityImg", img);
 
-        // Open details page in same tab
+    
         window.location.href = "activity-details.html";
     });
 });
+
